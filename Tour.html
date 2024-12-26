@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Direction - Official</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('2DCOVER2.jpg');
+            color: #3e3e3e; /* Default text color (dark grey for readability) */
+        }
+
+
+        .button-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in the width */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
+
+        .button {
+            width: calc(100% / 6); /* Each button takes equal width */
+            padding: 40px 0; /* Increased padding for better height */
+            font-size: 20px; /* Font size for better readability */
+            color: white; /* White text */
+            background-color: black; /* Black background for buttons */
+            border: none;
+            text-decoration: none; /* Remove underline */
+            text-align: center; /* Center text */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .button:hover {
+            background-color: #90021F; /* Red on hover */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .button {
+                width: calc(100%); /* Full width on mobile for each button */
+                padding: 40px 0; /* Increased padding for better height */
+                font-size: 24px; /* Larger font size for better readability */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            .button {
+                font-size: 18px; /* Adjust font size for tablets */
+                padding: 30px 0; /* Adjust padding for tablets */
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* White text for the heading */
+        }
+
+        .tour-dates {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* White text for the dates */
+        }
+
+        .tour-dates p {
+            margin: 10px 0;
+        }
+
+        .button1 {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="Home.html" class="button">Home</a>
+        <a href="Band.html" class="button">Band</a>
+        <a href="Tour.html" class="button">Tour</a>
+        <a href="Music.html" class="button">Music</a>
+        <a href="Shop.html" class="button">Shop</a>
+        <a href="https://link6.com" class="button">Newsletter</a>
+    </div>
+
+    <h1>TOUR</h1>
+
+    <div class="tour-dates">
+        <p>18-Dec-24, UK, London, Watford Colosseum</p>
+        <p>19-Dec-24, UK, Westcliff-on-Sea, Cliffs Pavilion</p>
+        <p>21-Dec-24, UK, Wolverhampton, Wolverhampton Civic Hall</p>
+        <p>22-Dec-24, UK, Manchester, O2 Apollo Manchester</p>
+        <p>23-Dec-24, UK, Manchester, O2 Apollo Manchester</p>
+        <p>3-Jan-24, UK, Bournemouth, Bournemouth International Centre</p>
+        <p>4-Jan-24, UK, Birmingham, National Indoor Arena</p>
+        <p>5-Jan-24, UK, Plymouth, Plymouth Pavilions</p>
+        <p>7-Jan-25, UK, Nottingham, Nottingham Royal Concert Hall</p>
+        <p>8-Jan-25, UK, Brighton, Brighton Centre</p>
+        <p>10-Jan-25, UK, London, HMV Hammersmith Apollo</p>
+        <p>11-Jan-25, UK, London, HMV Hammersmith Apollo</p>
+
+        <p>13-Jan-25, UK, Glasgow, Clyde Auditorium</p>
+        <p>14-Jan-25, UK, Glasgow, Clyde Auditorium</p>
+        <p>15-Jan-25, UK, Liverpool, Echo Arena Liverpool</p>
+        <p>17-Jan-25, UK, Newcastle, Newcastle City Hall</p>
+        <p>18-Jan-25, UK, Blackpool, Blackpool Opera House</p>
+        <p>20-Jan-25, UK, Sheffield, Sheffield City Hall</p>
+        <p>21-Jan-25, UK, Cardiff, Motorpoint Arena Cardiff</p>
+        <p>22-Jan-25, UK, London, HMV Hammersmith Apollo</p>
+        <p>24-Jan-25, Ireland, Dublin, The O2</p>
+        <p>25-Jan-25, UK, Belfast, Waterfront Hall</p>
+        <p>26-Jan-25, UK, Belfast, Waterfront Hall</p>
+    </div>
+
+    <center><a href="https://sites.google.com/view/twodirectionlego/shop/ticket" class="button button1">GET TICKET</a></center>
+
+</body>
+</html>

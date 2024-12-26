@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preorder: Up All Night</title>
+
+<style>
+        /* Global styles */
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation button styles */
+        .button-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in the width */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
+
+        .button {
+            width: calc(100% / 6); /* Each button takes equal width */
+            padding: 40px 0; /* Increased padding for better height */
+            font-size: 20px; /* Font size for better readability */
+            color: white; /* White text for navigation buttons */
+            background-color: black; /* Black background for buttons */
+            border: none;
+            text-decoration: none; /* Remove underline */
+            text-align: center; /* Center text */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .button:hover {
+            background-color: #90021F; /* Red on hover */
+            color: white;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .button {
+                width: 100%; /* Full width on mobile for each button */
+                padding: 40px 0; /* Increased padding for better height */
+                font-size: 24px; /* Larger font size for better readability */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            .button {
+                font-size: 18px; /* Adjust font size for tablets */
+                padding: 30px 0; /* Adjust padding for tablets */
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* White text for the heading */
+        }
+
+        .tour-dates {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* White text for the dates */
+        }
+
+        .tour-dates p {
+            margin: 10px 0;
+        }
+
+        .button1 {
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Up All Night Page Styles */
+        h12 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h22 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .button3-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .button3 {
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: gray;
+            color: white;
+            background: transparent;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button3:hover {
+            background-color: white;
+            color: white;
+        }
+
+        /* Styling for release info */
+        .release-info {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: white; /* Text color for the release information */
+        }
+
+        /* Button styles for Up All Night section */
+        .button4 {
+            width: 250px; /* Set width for square */
+            height: 50px; /* Set height for square */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white; /* White outline */
+            background-color: transparent; /* Transparent background */
+            color: white; /* Button text color */
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px; /* Optional for rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 0px; /* Space above the button */
+        }
+
+        .button4:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="Index.html" class="button">Home</a>
+        <a href="Band.html" class="button">Band</a>
+        <a href="Tour.html" class="button">Tour</a>
+        <a href="Music.html" class="button">Music</a>
+        <a href="Shop.html" class="button">Shop</a>
+        <a href="https://link6.com" class="button">Newsletter</a>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: transparent;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(30, 30, 30, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff4747;
+        }
+        p {
+            margin: 10px 0;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #ff4747;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: background-color 0.3s, content 0.3s;
+        }
+        button:hover {
+            background-color: #ff2020;
+        }
+        button[data-original]:hover {
+            content: attr(data-hover);
+        }
+        .quantity {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .quantity button {
+            width: 40px;
+            height: 40px;
+        }
+        .quantity span {
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #121212;
+            color: #fff;
+        }
+        .ticket {
+            background-color: rgba(30, 30, 30, 0.95);
+            border: 2px dashed #ff4747;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .ticket p {
+            margin: 5px 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>Preorder "Up All Night"</h1>
+        <p>Select your edition:</p>
+        <button id="classicButton" data-original="Classic Edition - $0.99" data-hover="Purchase" data-edition="Classic" data-price="0.99">Classic Edition - $0.99</button>
+        <button id="souvenirButton" data-original="Souvenir Edition - $1.19" data-hover="Purchase" data-edition="Souvenir" data-price="1.19">Souvenir Edition - $1.19</button>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h1>Checkout</h1>
+        <p id="selectedEdition"></p>
+        <div class="quantity">
+            <button id="decreaseQuantity">-</button>
+            <span id="quantity">1</span>
+            <button id="increaseQuantity">+</button>
+        </div>
+        <form id="checkoutForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="creditCard" placeholder="Credit Card Number" maxlength="16" required>
+            <button type="button" id="confirmButton">Confirm</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h1>Thank You!</h1>
+        <p>Your order details:</p>
+        <div class="ticket" id="ticketDetails">
+            <p><strong>Name:</strong> <span id="ticketName"></span></p>
+            <p><strong>Edition:</strong> <span id="ticketEdition"></span></p>
+            <p><strong>Quantity:</strong> <span id="ticketQuantity"></span></p>
+            <p><strong>Total:</strong> $<span id="ticketTotal"></span></p>
+            <p><strong>Pickup Code:</strong> <span id="ticketCode"></span></p>
+        </div>
+        <button id="downloadButton">Download Ticket</button>
+        <button id="printButton">Print Ticket</button>
+    </div>
+
+    <script>
+        // Page navigation
+        const page1 = document.getElementById("page1");
+        const page2 = document.getElementById("page2");
+        const page3 = document.getElementById("page3");
+
+        // First Page
+        const classicButton = document.getElementById("classicButton");
+        const souvenirButton = document.getElementById("souvenirButton");
+
+        // Second Page
+        const selectedEdition = document.getElementById("selectedEdition");
+        const quantitySpan = document.getElementById("quantity");
+        const decreaseQuantity = document.getElementById("decreaseQuantity");
+        const increaseQuantity = document.getElementById("increaseQuantity");
+        const confirmButton = document.getElementById("confirmButton");
+
+        // Third Page
+        const ticketDetails = document.getElementById("ticketDetails");
+        const ticketName = document.getElementById("ticketName");
+        const ticketEdition = document.getElementById("ticketEdition");
+        const ticketQuantity = document.getElementById("ticketQuantity");
+        const ticketTotal = document.getElementById("ticketTotal");
+        const ticketCode = document.getElementById("ticketCode");
+        const downloadButton = document.getElementById("downloadButton");
+        const printButton = document.getElementById("printButton");
+
+        let edition = "";
+        let price = 0;
+        let quantity = 1;
+
+        // Edition selection
+        [classicButton, souvenirButton].forEach(button => {
+            button.addEventListener("mouseover", () => button.textContent = button.getAttribute("data-hover"));
+            button.addEventListener("mouseout", () => button.textContent = button.getAttribute("data-original"));
+            button.addEventListener("click", () => {
+                edition = button.dataset.edition;
+                price = parseFloat(button.dataset.price);
+                goToPage(page2);
+                selectedEdition.textContent = `Selected Edition: ${edition} - $${price.toFixed(2)} each`;
+            });
+        });
+
+        // Quantity adjustments
+        decreaseQuantity.addEventListener("click", () => {
+            if (quantity > 1) quantity--;
+            quantitySpan.textContent = quantity;
+        });
+
+        increaseQuantity.addEventListener("click", () => {
+            quantity++;
+            quantitySpan.textContent = quantity;
+        });
+
+        // Confirm button
+        confirmButton.addEventListener("click", () => {
+            const name = document.getElementById("name").value;
+            const creditCard = document.getElementById("creditCard").value;
+
+            if (name && creditCard) {
+                // Populate ticket details
+                ticketName.textContent = name;
+                ticketEdition.textContent = edition;
+                ticketQuantity.textContent = quantity;
+                ticketTotal.textContent = (price * quantity).toFixed(2);
+                ticketCode.textContent = Math.floor(1000 + Math.random() * 9000);
+
+                goToPage(page3);
+            } else {
+                alert("Please fill out all fields!");
+            }
+        });
+
+        // Download ticket
+        downloadButton.addEventListener("click", () => {
+            const element = document.createElement("a");
+            const content = `
+                Name: ${ticketName.textContent}
+                Edition: ${ticketEdition.textContent}
+                Quantity: ${ticketQuantity.textContent}
+                Total: $${ticketTotal.textContent}
+                Pickup Code: ${ticketCode.textContent}
+            `;
+            const blob = new Blob([content], { type: "text/plain" });
+            element.href = URL.createObjectURL(blob);
+            element.download = "ticket.txt";
+            element.click();
+        });
+
+        // Print ticket
+        printButton.addEventListener("click", () => {
+            window.print();
+        });
+
+        // Page navigation
+        function goToPage(showPage) {
+            [page1, page2, page3].forEach(page => page.classList.add("hidden"));
+            showPage.classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>

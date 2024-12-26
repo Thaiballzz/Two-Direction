@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Direction - Official</title>
+
+<style>
+        body {
+            background-color: black; /* Background color of the page */
+            margin: 0; /* Remove default margin */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .button-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in the width */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
+        .button {
+            width: calc(100% / 6); /* Each button takes equal width */
+            padding: 40px 0; /* Increased padding for better height */
+            font-size: 20px; /* Font size for better readability */
+            color: white; /* White text */
+            background-color: black; /* Black background for buttons */
+            border: none;
+            text-decoration: none; /* Remove underline */
+            text-align: center; /* Center text */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+        .button:hover {
+            background-color: #90021F; /* Red on hover */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .button {
+                width: calc(100%); /* Full width on mobile for each button */
+                padding: 40px 0; /* Increased padding for better height */
+                font-size: 24px; /* Larger font size for better readability */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            .button {
+                font-size: 18px; /* Adjust font size for tablets */
+                padding: 30px 0; /* Adjust padding for tablets */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="Home.html" class="button">Home</a>
+        <a href="Band.html" class="button">Band</a>
+        <a href="Tour.html" class="button">Tour</a>
+        <a href="Music.html" class="button">Music</a>
+        <a href="Shop.html" class="button">Shop</a>
+        <a href="https://link6.com" class="button">Newsletter</a>
+    </div>
+<style>
+.content {
+    max-width: 4000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    margin-right: 50px;
+}
+
+.content h1, .content p {
+    margin-right: 50px;
+    color: white; /* Add this to make the text white */
+}
+
+/* For the first content (Louis), image on the left, text on the right */
+.content.louis {
+    flex-direction: row;
+}
+
+/* For the second content (Harry), image on the right, text on the left */
+.content.harry {
+    flex-direction: row-reverse;
+}
+</style>
+
+<div class="content louis">
+    <img src="Louis.jpg" alt="Lego Figure" width="400" height="400">
+    <div>
+        <h1>Louis</h1>
+        <p>It’s been such an amazing year for us, and to have our first album out is just mind-blowing. We’re so lucky to have such incredible fans who’ve supported us from the start. It feels like we’ve only just begun, and we’re really excited about what’s ahead. We’re all in this together, and we couldn’t ask for anything more.</p>
+    </div>
+</div>
+
+<div class="content harry">
+    <img src="Harry.jpg" alt="Lego Figure" width="400" height="400">
+    <div>
+        <h1>Harry</h1>
+        <p>You can’t plan any of this. One minute, we’re working on songs, and then we release them, and the response is bigger than we ever imagined. It’s like we’re constantly learning and growing. I think the most exciting part is knowing that the journey is just beginning and there’s so much more to experience.</p>
+    </div>
+</div>
+
+<div class="content louis">
+    <img src="Liam.jpg" alt="Lego Figure" width="400" height="400">
+    <div>
+        <h1>Liam</h1>
+        <p>The whole thing is kind of overwhelming, but in the best way possible. To see the response from fans and hear them sing our songs back to us—it’s something we’ve dreamed of, and now it’s real. There’s so much more to come, and I think this is just the start of something amazing.</p>
+    </div>
+</div>
+
+<div class="content harry">
+    <img src="Niall.jpg" alt="Lego Figure" width="400" height="400">
+    <div>
+        <h1>Niall</h1>
+        <p>Honestly, it’s still sinking in that we have an album out. We’ve put a lot of heart into it, and it’s just amazing to see people connecting with the music. I’m just grateful to be here with these guys and to have fans who’ve been so supportive. The future’s looking bright, and we’re ready for it!</p>
+    </div>
+</div>
+
+<div class="content louis">
+    <img src="Zayn.jpg" alt="Lego Figure" width="400" height="400">
+    <div>
+        <h1>Zayn</h1>
+        <p>I never expected things to move so quickly. It feels a bit surreal, but I’m proud of what we’ve achieved so far. There’s a real sense of excitement and pride with the album, and I think it shows in the music. I’ve always loved creating, and this is just the beginning of the journey."</p>
+    </div> 
+</div>
+
+
+
+

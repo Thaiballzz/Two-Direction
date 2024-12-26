@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Up All Night - The live show</title>
+
+<style>
+        /* Global styles */
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation button styles */
+        .button-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in the width */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
+
+        .button {
+            width: calc(100% / 6); /* Each button takes equal width */
+            padding: 40px 0; /* Increased padding for better height */
+            font-size: 20px; /* Font size for better readability */
+            color: white; /* White text for navigation buttons */
+            background-color: black; /* Black background for buttons */
+            border: none;
+            text-decoration: none; /* Remove underline */
+            text-align: center; /* Center text */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .button:hover {
+            background-color: #90021F; /* Red on hover */
+            color: white;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .button {
+                width: 100%; /* Full width on mobile for each button */
+                padding: 40px 0; /* Increased padding for better height */
+                font-size: 24px; /* Larger font size for better readability */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            .button {
+                font-size: 18px; /* Adjust font size for tablets */
+                padding: 30px 0; /* Adjust padding for tablets */
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* White text for the heading */
+        }
+
+        .tour-dates {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* White text for the dates */
+        }
+
+        .tour-dates p {
+            margin: 10px 0;
+        }
+
+        .button1 {
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Up All Night Page Styles */
+        h12 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h22 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .button3-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .button3 {
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: gray;
+            color: white;
+            background: transparent;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button3:hover {
+            background-color: white;
+            color: white;
+        }
+
+        /* Styling for release info */
+        .release-info {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: white; /* Text color for the release information */
+        }
+
+        /* Button styles for Up All Night section */
+        .button4 {
+            width: 250px; /* Set width for square */
+            height: 50px; /* Set height for square */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white; /* White outline */
+            background-color: transparent; /* Transparent background */
+            color: white; /* Button text color */
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px; /* Optional for rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 0px; /* Space above the button */
+        }
+
+        .button4:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="Index.html" class="button">Home</a>
+        <a href="Band.html" class="button">Band</a>
+        <a href="Tour.html" class="button">Tour</a>
+        <a href="Music.html" class="button">Music</a>
+        <a href="Shop.html" class="button">Shop</a>
+        <a href="https://link6.com" class="button">Newsletter</a>
+    </div>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      color: black; /* All text is black */
+    }
+    header {
+      background-color: red;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    .show-card {
+      background: transparent;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+      border: 2px solid red;
+      text-align: center; /* Center text on the first page */
+    }
+    .show-card h3 {
+      margin: 0 0 10px 0;
+    }
+    .show-card p {
+      margin: 5px 0;
+    }
+    .zone-selection {
+      display: flex;
+      justify-content: center; /* Center zone buttons */
+      margin-bottom: 20px;
+    }
+    .zone {
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 30%;
+      text-align: center;
+      transition: background-color 0.3s;
+      margin: 0 10px; /* Add space between zone buttons */
+    }
+    .zone.selected {
+      background-color: #a00000;
+    }
+    .zone:hover {
+      background-color: #a00000;
+    }
+    .time-button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+      position: relative;
+    }
+    .time-button:hover {
+      background-color: #a00000;
+    }
+    .time-button span.time {
+      display: inline;
+    }
+    .time-button span.purchase {
+      display: none;
+    }
+    .time-button:hover span.time {
+      display: none;
+    }
+    .time-button:hover span.purchase {
+      display: inline;
+    }
+    .payment-form {
+      background: transparent;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 400px;
+      border: 2px solid red;
+      text-align: left;
+      display: none;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .confirm-button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+    .thank-you {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      color: black; /* Black text for thank you message */
+    }
+    .ticket {
+      display: none;
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 500px;
+      border: 2px solid black;
+      text-align: center;
+    }
+    .ticket h2 {
+      margin-bottom: 20px;
+    }
+    .ticket p {
+      font-size: 18px;
+    }
+    .quantity-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .quantity-controls button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 0 10px;
+    }
+    .quantity-controls input {
+      width: 50px;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Up All Night - The live show</h1>
+</header>
+
+<!-- Show Selection Section -->
+<div id="show-selection">
+  <!-- Show 1 -->
+  <div class="show-card" id="show-1">
+    <h3>Up All Night - The Live Show</h3>
+    <p><strong>Date:</strong> 23 November 2024</p>
+    <p><strong>Time:</strong> 20:00</p>
+    
+    <!-- Zone Selection -->
+    <div class="zone-selection">
+      <div class="zone" onclick="selectZone('standing', this)">
+        <p>Standing Zone</p>
+        <p>THB 5500</p>
+      </div>
+      <div class="zone" onclick="selectZone('seating', this)">
+        <p>Seating Zone</p>
+        <p>THB 8500</p>
+      </div>
+      <div class="zone" onclick="selectZone('vip', this)">
+        <p>VIP Zone</p>
+        <p>THB 12000</p>
+      </div>
+    </div>
+
+    <button class="time-button" onclick="startPayment(1, '23 November 2024', '20:00')">
+      <span class="time">20:00</span>
+      <span class="purchase">Purchase</span>
+    </button>
+  </div>
+
+  <!-- Show 2 -->
+  <div class="show-card" id="show-2">
+    <h3>Up All Night - The Live Show</h3>
+    <p><strong>Date:</strong> 24 November 2024</p>
+    <p><strong>Time:</strong> 13:00</p>
+    
+    <!-- Zone Selection -->
+    <div class="zone-selection">
+      <div class="zone" onclick="selectZone('standing', this)">
+        <p>Standing Zone</p>
+        <p>THB 5500</p>
+      </div>
+      <div class="zone" onclick="selectZone('seating', this)">
+        <p>Seating Zone</p>
+        <p>THB 8500</p>
+      </div>
+      <div class="zone" onclick="selectZone('vip', this)">
+        <p>VIP Zone</p>
+        <p>THB 12000</p>
+      </div>
+    </div>
+
+    <button class="time-button" onclick="startPayment(2, '24 November 2024', '13:00')">
+      <span class="time">13:00</span>
+      <span class="purchase">Purchase</span>
+    </button>
+  </div>
+</div>
+
+<!-- Payment Form Section -->
+<div class="payment-form" id="payment-form">
+  <h3 id="tour-name"></h3>
+  <p id="tour-date"></p>
+  
+  <!-- Quantity Selection -->
+  <div class="quantity-controls">
+    <button onclick="changeQuantity(-1)">-</button>
+    <input type="number" id="quantity" value="1" min="1" onchange="updateQuantity()">
+    <button onclick="changeQuantity(1)">+</button>
+  </div>
+  
+  <form id="payment-form-body">
+    <!-- Full Name -->
+    <div class="form-group">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" required>
+    </div>
+
+    <!-- Whale Card Number -->
+    <div class="form-group">
+      <label for="card-number">Whale Card Number</label>
+      <input type="text" id="card-number" name="card-number" maxlength="16" pattern="[0-9]{16}" required>
+      <small>Please enter your 16-digit Whale Card number</small>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="confirm-button">Confirm</button>
+  </form>
+</div>
+
+<!-- Transaction Confirmation Section -->
+<div class="output" id="transaction-output"></div>
+
+<!-- Thank You Message Section -->
+<div class="thank-you" id="thank-you">
+  <h2>Thank you for your purchase!</h2>
+</div>
+
+<!-- Ticket Display Section -->
+<div class="ticket" id="ticket-display">
+  <h2>Your Tickets</h2>
+  <div id="ticket-output" style="display: flex; flex-wrap: wrap; gap: 20px;"></div>
+  <button onclick="printTickets()" class="confirm-button" style="margin-top: 20px;">Print Tickets</button>
+  <button onclick="downloadTickets()" class="confirm-button" style="margin-top: 10px;">Download Tickets</button>
+</div>
+
+<script>
+// Show details
+let selectedShowId = null;
+let selectedDate = "";
+let selectedTime = "";
+let selectedZone = "";
+let ticketQuantity = 1;
+
+// Show selection handler
+function selectZone(zone, element) {
+  const zones = document.querySelectorAll('.zone');
+  zones.forEach(zoneElement => zoneElement.classList.remove('selected'));
+  element.classList.add('selected');
+  selectedZone = zone;
+}
+
+// Start payment
+function startPayment(showId, date, time) {
+  selectedShowId = showId;
+  selectedDate = date;
+  selectedTime = time;
+  document.getElementById('tour-name').textContent = `Up All Night - The Live Show`;
+  document.getElementById('tour-date').textContent = `${date} - ${time}`;
+  document.getElementById('payment-form').style.display = 'block';
+  document.getElementById('show-selection').style.display = 'none';  // Hide show selection page
+}
+
+// Handle quantity changes
+function changeQuantity(amount) {
+  ticketQuantity = Math.max(1, ticketQuantity + amount);
+  document.getElementById('quantity').value = ticketQuantity;
+  updateTransactionAmount();
+}
+
+function updateQuantity() {
+  ticketQuantity = parseInt(document.getElementById('quantity').value);
+  updateTransactionAmount();
+}
+
+// Update total transaction amount
+function updateTransactionAmount() {
+  let price = 0;
+  switch (selectedZone) {
+    case 'standing': price = 5500; break;
+    case 'seating': price = 8500; break;
+    case 'vip': price = 12000; break;
+  }
+  const total = price * ticketQuantity;
+  document.getElementById('transaction-output').textContent = `Total: THB ${total.toLocaleString()}`;
+}
+
+// Handle form submission
+document.getElementById('payment-form-body').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = document.getElementById('full-name').value;
+  const cardNumber = document.getElementById('card-number').value;
+  if (name && cardNumber) {
+    document.getElementById('thank-you').style.display = 'block';
+    displayTickets();
+    document.getElementById('payment-form').style.display = 'none';  // Hide payment form after submission
+  }
+});
+
+// Display tickets
+function displayTickets() {
+  let ticketOutput = '';
+  for (let i = 0; i < ticketQuantity; i++) {
+    const ticketNumber = Math.floor(Math.random() * 1000000); // Random ticket number
+    ticketOutput += `
+      <div>
+        <p><strong>Ticket #${ticketNumber}</strong></p>
+        <p><strong>Zone:</strong> ${selectedZone.charAt(0).toUpperCase() + selectedZone.slice(1)} Zone</p>
+        <p><strong>Date:</strong> ${selectedDate}</p>
+        <p><strong>Time:</strong> ${selectedTime}</p>
+      </div>
+    `;
+  }
+  document.getElementById('ticket-output').innerHTML = ticketOutput;
+  document.getElementById('ticket-display').style.display = 'block';
+}
+</script>
+
+<script>
+function printTickets() {
+  const ticketContent = document.getElementById('ticket-output').innerHTML;
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`<html><head><title>Tickets</title></head><body>${ticketContent}</body></html>`);
+  printWindow.document.close();
+  printWindow.print();
+}
+
+function downloadTickets() {
+  const ticketContent = document.getElementById('ticket-output').innerHTML;
+  const blob = new Blob([ticketContent], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'tickets.html';
+  link.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
